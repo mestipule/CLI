@@ -1,0 +1,25 @@
+{
+  "name": "CLI",
+  "version": "1.0.0",
+  "description": "BAMAZON",
+  "main": "bamazon.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mestipule/CLI.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mestipule/CLI/issues"
+  },
+  "homepage": "https://github.com/mestipule/CLI#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "inquirer": "^6.2.2",
+    "mysql": "^2.16.0"
+  }
+}

@@ -1,21 +1,23 @@
-DROP DATABASE IF EXISTS bamazon;
-// create a database called BAMAZON
+ DROP DATABASE IF EXISTS bamazon;
+-- // create a database called BAMAZON
 CREATE DATABASE bamazon;
-// create a table called products
+-- // create a table called products
 USE bamazon;
 CREATE TABLE products (
-//   create item_id (primary key and not null)
+-- //   create item_id (primary key and not null)
   id INT NOT NULL AUTO_INCREMENT,
-//   create product_name
-  product_name VARCHAR(200) NULL,
-//   create department_name
-  department_name VARCHAR(200) NULL,
-//   create price
-  price DECIMAL (10,4),
-//   create stock_quantity
-  stock_quantity INT (255),
+-- //   create product_name
+  product_name VARCHAR(50) NOT NULL,
+-- //   create department_name
+  department_name VARCHAR(50) NOT NULL,
+-- //   create price
+  price DECIMAL (10,2) NOT NULL,
+-- //   create stock_quantity
+  stock_quantity INT (15) NOT NULL,
   PRIMARY KEY (id)
 );
+
+SELECT * FROM products 
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES(" Anti-Bacterial Cleaning Spray", "Home", 3.75, 85);
